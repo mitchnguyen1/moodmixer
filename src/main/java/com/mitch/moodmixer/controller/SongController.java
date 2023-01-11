@@ -48,6 +48,5 @@ public class SongController {
     public List<Song> findItemByGen(@PathVariable Integer id){
         return songService.findSongsByGenre(id);
     }
-
 }
 

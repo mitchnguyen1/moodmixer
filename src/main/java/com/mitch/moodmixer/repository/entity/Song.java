@@ -5,7 +5,7 @@ package com.mitch.moodmixer.repository.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "song", schema = "song")
+@Table(name = "song")
 public class Song {
 
     @Id
