@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodMixer</title>
+     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="icon" href="background/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<!--comment-->
+
+<body>
+    <video autoplay loop muted id="video" src="" type="video/mp4" preload="auto">
+    </video>
+<div id="card1">
+  <div class="card mx-auto" style="width:fit-content;">
+    <div class="card-body" id="ask">
+        <h3 class="playful">
+            <span aria-hidden="true">W</span><span aria-hidden="true">h</span><span aria-hidden="true">a</span><span aria-hidden="true">t</span>
+            <span aria-hidden="true">A</span><span aria-hidden="true">r</span><span aria-hidden="true">e</span>
+            <span aria-hidden="true">Y</span><span aria-hidden="true">o</span><span aria-hidden="true">u</span>
+            <span aria-hidden="true">F</span><span aria-hidden="true">e</span><span aria-hidden="true">e</span><span aria-hidden="true">l</span><span aria-hidden="true">i</span><span aria-hidden="true">n</span><span aria-hidden="true">g</span><span aria-hidden="true">?</span>
+        </h3>
+        <div class="body1">
+        <div class="slider">
+            <input type="range" min="0" max="6" value="3"  id="my-slider">
+        </div>
+        <br>
+            <h6 id="value">😊Uplifting😄</h6>
+        </div>
+    </div>
+        <div class="card-footer" id="ask1">
+            <button type="button" class="button" onclick="window.location.href='index.html'">Back</button>
+            <input type="submit" value="Find Song" id="button" class="button">
+    </div>
+    <div class="card-body" id="output">
+        <h3 id="ranSong" class="songTitle">Random Song</h3>
+        <div class="songBody"> 
+        <h5><u>Title</u></h5>
+        <h6 id="title">ggggg</h6>
+        <h5><u>Artist</u></h5>
+        <h6 id="artist">ggggg</h6>
+        <iframe id="link" style="border-radius:12px" src="" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</div>
+    <div class="card-footer" id="output1">
+        <button type="button" class="button" onclick="window.location.href='index.html'">Back</button>
+        <input type="submit" value="Find Another One" id="reset" class="button">
+    </div>
+</div>
+</div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="js/output.js" type="module"></script>
+</body>
+</html>

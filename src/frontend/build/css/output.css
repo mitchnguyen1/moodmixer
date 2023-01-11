@@ -1,0 +1,273 @@
+html body{
+    overflow-y: hidden;
+    background-image: url('../background/pic/11.png');
+    background-position: center;
+    background-size: cover;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.card{
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 7rem;
+    z-index: 1;
+    background-color: #bcbabac7;
+    min-height: 52rem;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+}
+.card-footer {
+    border: none;
+    background-color: transparent;
+  }
+
+#value{
+    font-size: 4rem;
+    margin-top: 1rem;
+    font-family: "Archivo Black", "Archivo", sans-serif;;
+    text-shadow: 
+          6px 6px white,
+          5px 5px white, 5.5px 5.5px white, 5.25px 5.25px white, 5.75px 5.75px white,
+          4px 4px white, 4.5px 4.5px white, 4.25px 4.25px white, 4.75px 4.75px white,
+          3px 3px white, 3.5px 3.5px white, 3.25px 3.25px white, 3.75px 3.75px white,
+          2px 2px white, 2.5px 2.5px white, 2.25px 2.25px white, 2.75px 2.75px white,
+          1px 1px white, 1.5px 1.5px white, 1.25px 1.25px white, 1.75px 1.75px white,
+          0.5px 0.5px white, 0.25px 0.25px white, 0.75px 0.75px white;
+    }
+
+.body1{
+   position: absolute;
+   top: 40%;
+   left: 25%;
+   right: 25%;
+}
+
+h3{
+    white-space: nowrap;
+    font-family: "Archivo Black", "Archivo", sans-serif;;
+}
+h5{
+    font-size: 3.5rem;
+    font-family: "Archivo Black", "Archivo", sans-serif;;
+
+}
+
+h6{
+    font-size: 3rem;
+    font-family: "Archivo Black", "Archivo", sans-serif;;
+    
+}
+
+:root {
+    --shadow: #084aff;
+    --shadow2: rgb(125, 255, 19);
+    --shadow3: rgb(233, 6, 6);
+    --shadow4: rgb(255, 0, 242);
+    --text: #fbff00;
+    --text2: rgb(255, 0, 0);
+    --text3: rgb(0, 255, 251);
+    --text4: rgb(89, 253, 100);
+    --border: red;
+  }
+
+.playful {
+    white-space: nowrap;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 6.19em;
+    border-bottom: 0.5rem solid var(--border);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+}
+.playful span {
+    color: var(--text);
+    position: relative;
+    animation: scatter 1.75s infinite;
+    text-shadow: 
+      6px 6px var(--shadow),
+      5.75px 5.75px var(--shadow),
+      5.5px 5.5px var(--shadow),
+      5.25px 5.25px var(--shadow),
+      5px 5px var(--shadow),
+      4.75px 4.75px var(--shadow),
+      4.5px 4.5px var(--shadow),
+      4.25px 4.25px var(--shadow),
+      4px 4px var(--shadow),
+      3.75px 3.75px var(--shadow),
+      3.5px 3.5px var(--shadow),
+      3.25px 3.25px var(--shadow),
+      3px 3px var(--shadow),
+      2.75px 2.75px var(--shadow),
+      2.5px 2.5px var(--shadow),
+      2.25px 2.25px var(--shadow),
+      2px 2px var(--shadow),
+      1.75px 1.75px var(--shadow),
+      1.5px 1.5px var(--shadow),
+      1.25px 1.25px var(--shadow),
+      1px 1px var(--shadow),
+      0.75px 0.75px var(--shadow),
+      0.5px 0.5px var(--shadow),
+      0.25px 0.25px var(--shadow);
+  }
+  
+.playful span:nth-child(2n) {
+    color: var(--text2);
+    --shadow: var(--shadow2);
+    animation-delay: 0.3s;
+  }
+
+.playful span:nth-child(3n) {
+    color: var(--text3);
+    --shadow: var(--shadow3);
+    animation-delay: 0.15s;
+  }
+
+.playful span:nth-child(4n) {
+    color: var(--text4);
+    --shadow: var(--shadow4);
+    animation-delay: 0.4s;
+  }
+
+@keyframes scatter {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -10px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+.button{
+    font-size: 2.8rem;
+    background-color: #020301;
+    color: white;
+    height: auto;
+    width: auto;
+    border-radius: 1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    display: inline-block;
+
+}
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+
+.songTitle{
+    white-space: nowrap;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 4em;
+    border-bottom: 0.5rem solid rgb(255, 255, 255);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: white;
+    text-shadow: 
+          6px 6px black,
+          5px 5px black, 5.5px 5.5px black, 5.25px 5.25px black, 5.75px 5.75px black,
+          4px 4px black, 4.5px 4.5px black, 4.25px 4.25px black, 4.75px 4.75px black,
+          3px 3px black, 3.5px 3.5px black, 3.25px 3.25px black, 3.75px 3.75px black,
+          2px 2px black, 2.5px 2.5px black, 2.25px 2.25px black, 2.75px 2.75px black,
+          1px 1px black, 1.5px 1.5px black, 1.25px 1.25px black, 1.75px 1.75px black,
+          0.5px 0.5px black, 0.25px 0.25px black, 0.75px 0.75px black;
+    }
+.songBody {
+    color: white;
+}
+.songBody h5{
+    text-decoration: none;
+    text-shadow: 
+          6px 6px black,
+          5px 5px black, 5.5px 5.5px black, 5.25px 5.25px black, 5.75px 5.75px black,
+          4px 4px black, 4.5px 4.5px black, 4.25px 4.25px black, 4.75px 4.75px black,
+          3px 3px black, 3.5px 3.5px black, 3.25px 3.25px black, 3.75px 3.75px black,
+          2px 2px black, 2.5px 2.5px black, 2.25px 2.25px black, 2.75px 2.75px black,
+          1px 1px black, 1.5px 1.5px black, 1.25px 1.25px black, 1.75px 1.75px black,
+          0.5px 0.5px black, 0.25px 0.25px black, 0.75px 0.75px black;
+    }
+
+.songBody h6 {
+    text-decoration: underline solid rgb(3, 3, 3);
+    text-shadow: 
+    6px 6px black,
+    5px 5px black, 5.5px 5.5px black, 5.25px 5.25px black, 5.75px 5.75px black,
+    4px 4px black, 4.5px 4.5px black, 4.25px 4.25px black, 4.75px 4.75px black,
+    3px 3px black, 3.5px 3.5px black, 3.25px 3.25px black, 3.75px 3.75px black,
+    2px 2px black, 2.5px 2.5px black, 2.25px 2.25px black, 2.75px 2.75px black,
+    1px 1px black, 1.5px 1.5px black, 1.25px 1.25px black, 1.75px 1.75px black,
+    0.5px 0.5px black, 0.25px 0.25px black, 0.75px 0.75px black;
+}
+
+#link{
+    font-size: 2rem;
+}
+
+#output{
+    display: none;
+}
+
+#output.active{
+    display: block;
+}
+
+.ask{
+    display: block;
+}
+
+#ask.active{
+    display: none;
+}
+
+#output1{
+    display: none;
+}
+
+#output1.active{
+    display: block;
+}
+
+.ask1{
+    display: block;
+}
+
+#ask1.active{
+    display: none;
+}
+
+.slider {
+    margin-top: 3rem;
+    background: transparent;
+    } 
+.slider input[type="range"] {
+    -webkit-appearance:none !important;
+    width: 30rem;
+    height: 1rem;
+    background: black;
+    border: none;
+    outline: none;
+    }
+.slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 3rem;
+    height:3rem;
+    background: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+    background: rgb(255, 255, 255);
+    }
+
