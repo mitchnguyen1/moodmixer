@@ -18,18 +18,21 @@ public class MoodmixerApplication {
 		SpringApplication.run(MoodmixerApplication.class, args);
 	}
 	@RequestMapping("/")
+	@ResponseBody
 	public String index() {
 		return "../../frontend/build/index.html";
 	}
 
 	@RequestMapping("/output")
+	@ResponseBody
 	public String output() {
-		return "output.html";
+		return "../../target/static/output.html";
 	}
 
 	@RequestMapping("/input")
+	@ResponseBody
 	public String input() {
-		return "frontend/build/input.html";
+		return "../../frontend/build/input.html";
 	}
 
 	@RequestMapping("/test")
