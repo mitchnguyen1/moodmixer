@@ -48,5 +48,24 @@ public class SongController {
     public List<Song> findItemByGen(@PathVariable Integer id){
         return songService.findSongsByGenre(id);
     }
+
+    @RequestMapping("/first")
+    public String welcome() {
+        return "../../frontend/build/index";
+    }
+    @RequestMapping("/second")
+    public String second() {
+        return "../../frontend/build/index.html";
+    }
+
+    @RequestMapping("/third")
+    public String third() {
+        return "index";
+    }
+
+    @RequestMapping("/fourth")
+    public String fourth() {
+        return "index.html";
+    }
 }
 
