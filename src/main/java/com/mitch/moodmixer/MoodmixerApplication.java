@@ -31,4 +31,9 @@ public class MoodmixerApplication {
 	public String input() {
 		return "frontend/build/input.html";
 	}
+
+	@RequestMapping("/test")
+	public String test() {
+		return "test";
+	}
 }
