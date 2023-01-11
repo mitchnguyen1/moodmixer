@@ -28,7 +28,6 @@ target/**
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
 !**/src/test/**/build/
 
 ### VS Code ###
