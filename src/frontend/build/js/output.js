@@ -61,7 +61,6 @@ function display(){
     }
     else if(value ==5){
         getSong()
-        console.log(responseJSON);
         ranSongElem.style.color = 'rgb(255, 145, 0)';
         ranSongElem.style.borderBottom = '0.5rem solid orange'
         ranSongElem.innerText = "Random 😆Euphoric🥰 Song"
