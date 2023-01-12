@@ -90,8 +90,8 @@ function display(){
         linkElem.setAttribute("src", `${responseJSON[num].link}`);
       }
       //catching an error and console log
-      catch (e) {
-        console.log(e)
+      catch (error) {
+        console.log(error)
       }
     }
 
