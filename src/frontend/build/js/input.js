@@ -24,7 +24,7 @@ const newSongs = itemsController.newSongs;
 function save(artist,song_name, genre, link){
     const data = {artist,song_name, genre, link};
     
-            fetch('https://moodmixer-xvrf.onrender.com/songs/add', {
+            fetch('https://moodmixer.org/songs/add', {
                 method: 'POST', // or 'PUT'
                 headers: {
                     'Content-Type': 'application/json',

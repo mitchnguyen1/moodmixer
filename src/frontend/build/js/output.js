@@ -79,7 +79,7 @@ function display(){
     async function getSong() {
       try {
         //await and fetch the data from the database
-        const response = await fetch(`https://moodmixer-xvrf.onrender.com/songs/findBy/+${value}`)
+        const response = await fetch(`https://moodmixer.org/songs/findBy/+${value}`)
         //await and parse the response into a JavaScript Object
         const responseJSON = await response.json(); 
         let num = Math.floor(Math.random()*responseJSON.length);
