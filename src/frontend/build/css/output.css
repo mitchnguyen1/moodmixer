@@ -17,10 +17,10 @@ video {
 .card{
     border: 2px solid black;
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 5rem;
     z-index: 1;
     background-color: #bcbabac7;
-    min-height: 52rem;
+    height: 40rem;
     font-family: "Archivo Black", "Archivo", sans-serif;
 }
 .card-footer {
@@ -81,7 +81,7 @@ h6{
     white-space: nowrap;
     font-weight: 300;
     margin-top: 1rem;
-    font-size: 6.19em;
+    font-size: 4.5em;
     border-bottom: 0.5rem solid var(--border);
     margin-left: 2rem;
     margin-right: 2rem;

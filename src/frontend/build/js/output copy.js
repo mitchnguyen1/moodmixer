@@ -14,62 +14,63 @@ const findButton = document.getElementById("button");
 const reset = document.getElementById("reset");
 const cardElem = document.getElementById('card1');
 
+
 function display(){
-  let depressedVid = [];
-  let sadVid = []
-//   let netVid = [net2];
-  let upVid = [];
-  let happyVid = []
-  let euVid = [];
-//   let rageVid = [rage rage4];
-  let randomNum = Math.floor(Math.random()*4);
   if(value == 0){
-      let num = Math.floor(Math.random()*12)
-      getSong(num);
-      ranSongElem.innerText = "Random 💔Depressed💔 Song";
-      videoElem.setAttribute('src',`background/${depressedVid[randomNum]}.mp4`);
+        getSong()
+        ranSongElem.style.color = 'pink';
+        ranSongElem.style.borderBottom = '0.5rem solid pink'
+        ranSongElem.innerText = "Random 💔Depressed💔 Song"
+        
     }
     else if(value ==1){
-        let num = Math.floor(Math.random()*12)
-        getSong(num);
+        getSong()
+        ranSongElem.style.color = 'rgb(255, 246, 66)';
+        ranSongElem.style.borderBottom = '0.5rem solid yellow'
         ranSongElem.innerText = "Random 😭Sad😢 Song"
-        videoElem.setAttribute('src',`background/${sadVid[randomNum]}.mp4`);
+        
     }
     else if(value ==2){
-        let num = Math.floor(Math.random()*16)
-        getSong(num);
+        getSong()
+        ranSongElem.style.color = 'rgb(100, 255, 44)';
+        ranSongElem.style.borderBottom = '0.5rem solid green';
         ranSongElem.innerText = "Random 😢Neutral🙃 Song"
-        videoElem.setAttribute('src',`background/${netVid[randomNum]}.mp4`);
+        
     }
     else if(value ==3){
-        let num = Math.floor(Math.random()*18)
-        getSong(num);
+        getSong()
+        ranSongElem.style.color = 'rgb(0, 149, 255)';
+        ranSongElem.style.borderBottom = '0.5rem solid blue'
         ranSongElem.innerText = "Random 😊Uplifting😄 Song"
-        videoElem.setAttribute('src',`background/${upVid[randomNum]}.mp4`);
+        
     }
     else if(value ==4){
-        let num = Math.floor(Math.random()*14)
-        getSong(num);
+        getSong()
+        ranSongElem.style.color = 'rgb(168, 47, 255)';
+        ranSongElem.style.borderBottom = '0.5rem solid purple'
         ranSongElem.innerText = "Random 😜Happy😁 Song"
-        videoElem.setAttribute('src',`background/${happyVid[randomNum]}.mp4`);
+        
     }
     else if(value ==5){
-        let num = Math.floor(Math.random()*12)
-        getSong(num);
+        getSong()
+        ranSongElem.style.color = 'rgb(255, 145, 0)';
+        ranSongElem.style.borderBottom = '0.5rem solid orange'
         ranSongElem.innerText = "Random 😆Euphoric🥰 Song"
-        videoElem.setAttribute('src',`background/${euVid[randomNum]}.mp4`);
+        
     }
     else if(value ==6){
-        let num = Math.floor(Math.random()*14)
-        getSong(num);
+        getSong()
+        ranSongElem.style.color = 'red';
+        ranSongElem.style.borderBottom = '0.5rem solid red'
         ranSongElem.innerText = "Random 😤Rage😈 Song"
-        videoElem.setAttribute('src',`background/${rageVid[randomNum]}.mp4`);
+       
     }
 }
+
     async function getSong() {
       try {
         //await and fetch the data from the database
-        const response = await fetch(`http://localhost:8080/songs/findBy/+${value}`)
+        const response = await fetch(`https://moodmixer.org/songs/findBy/+${value}`)
         //await and parse the response into a JavaScript Object
         const responseJSON = await response.json(); 
         let num = Math.floor(Math.random()*responseJSON.length);
@@ -77,12 +78,11 @@ function display(){
         titleElem.innerHTML = `${responseJSON[num].song_name}`;
         artistElem.innerText = `${responseJSON[num].artist}`;
         //linkElem.href = `${responseJSON[num].link}`;
-        linkElem.setAttribute("src", `${responseJSON[num].link}`)
-
+        linkElem.setAttribute("src", `${responseJSON[num].link}`);
       }
       //catching an error and console log
-      catch (e) {
-        console.log(e)
+      catch (error) {
+        console.log(error)
       }
     }
 

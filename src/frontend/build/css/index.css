@@ -11,9 +11,9 @@ html body{
 .card{
     border: 2px solid black;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 10rem;
-    height: 40rem;
+    height: 30rem;
     font-family: serif;
     background-color: rgba(237, 237, 237, 0.91);
 }
@@ -27,7 +27,7 @@ html body{
 .playful {
 white-space: nowrap;
 font-weight: 300;
-font-size: 6rem;
+font-size: 4.5rem;
 border-bottom: 0.8rem solid black;
 padding-left: 1rem;
 padding-right: 1rem;
@@ -44,11 +44,11 @@ text-shadow:
 
 
 .button{
-    margin-top: 4rem;
-    font-size: 5rem;
+    margin-top: 3rem;
+    font-size: 3rem;
     background-color: #020301;
     color: white;
-    height: auto;
+    height: 6rem;
     width: auto;
     border-radius: 1rem;
 }
