@@ -20,7 +20,7 @@ video {
     margin-top: 5rem;
     z-index: 1;
     background-color: #bcbabac7;
-    height: 40rem;
+    height: 40.0005rem;
     font-family: "Archivo Black", "Archivo", sans-serif;
 }
 .card-footer {
@@ -80,7 +80,7 @@ h6{
 .playful {
     white-space: nowrap;
     font-weight: 300;
-    margin-top: 1rem;
+    margin-top: 1.0001rem;
     font-size: 4.5em;
     border-bottom: 0.5rem solid var(--border);
     margin-left: 2rem;
