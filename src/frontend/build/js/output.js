@@ -15,66 +15,134 @@ const reset = document.getElementById("reset");
 const cardElem = document.getElementById('card1');
 
 
-function display(){
-  let depressedVid = ['rain','rain2','rain3','rain4'];
-  let sadVid = ['sad','sad2','sad3','sad4',]
-  let netVid = ['net','net2','net3','net4',];
-  let upVid = ['up','up2','up3','up4',];
-  let happyVid = ['happy','happy2','happy3','happy4',]
-  let euVid = ['eu','eu2','eu3','eu4',];
-  let rageVid = ['rage','rage2','rage3','rage4',];
-  let randomNum = Math.floor(Math.random()*4);
-  if(value == 0){
-        getSong()
-        ranSongElem.style.color = 'pink';
-        ranSongElem.style.borderBottom = '0.5rem solid pink'
-        ranSongElem.innerText = "Random 💔Depressed💔 Song"
-        videoElem.setAttribute('src',`background/${depressedVid[randomNum]}.mp4`);
-    }
-    else if(value ==1){
-        getSong()
-        ranSongElem.style.color = 'rgb(255, 246, 66)';
-        ranSongElem.style.borderBottom = '0.5rem solid yellow'
-        ranSongElem.innerText = "Random 😭Sad😢 Song"
-        videoElem.setAttribute('src',`background/${sadVid[randomNum]}.mp4`);
-    }
-    else if(value ==2){
-        getSong()
-        ranSongElem.style.color = 'rgb(100, 255, 44)';
-        ranSongElem.style.borderBottom = '0.5rem solid green';
-        ranSongElem.innerText = "Random 😢Neutral🙃 Song"
-        videoElem.setAttribute('src',`background/${netVid[randomNum]}.mp4`);
-    }
-    else if(value ==3){
-        getSong()
-        ranSongElem.style.color = 'rgb(0, 149, 255)';
-        ranSongElem.style.borderBottom = '0.5rem solid blue'
-        ranSongElem.innerText = "Random 😊Uplifting😄 Song"
-        videoElem.setAttribute('src',`background/${upVid[randomNum]}.mp4`);
-    }
-    else if(value ==4){
-        getSong()
-        ranSongElem.style.color = 'rgb(168, 47, 255)';
-        ranSongElem.style.borderBottom = '0.5rem solid purple'
-        ranSongElem.innerText = "Random 😜Happy😁 Song"
-        videoElem.setAttribute('src',`background/${happyVid[randomNum]}.mp4`);
-    }
-    else if(value ==5){
-        getSong()
-        ranSongElem.style.color = 'rgb(255, 145, 0)';
-        ranSongElem.style.borderBottom = '0.5rem solid orange'
-        ranSongElem.innerText = "Random 😆Euphoric🥰 Song"
-        videoElem.setAttribute('src',`background/${euVid[randomNum]}.mp4`);
-    }
-    else if(value ==6){
-        getSong()
-        ranSongElem.style.color = 'red';
-        ranSongElem.style.borderBottom = '0.5rem solid red'
-        ranSongElem.innerText = "Random 😤Rage😈 Song"
-        videoElem.setAttribute('src',`background/${rageVid[randomNum]}.mp4`);
-    }
-}
+// function display(){
+//   let depressedVid = ['rain','rain2','rain3','rain4'];
+//   let sadVid = ['sad','sad2','sad3','sad4',]
+//   let netVid = ['net','net2','net3','net4',];
+//   let upVid = ['up','up2','up3','up4',];
+//   let happyVid = ['happy','happy2','happy3','happy4',]
+//   let euVid = ['eu','eu2','eu3','eu4',];
+//   let rageVid = ['rage','rage2','rage3','rage4',];
+//   let randomNum = Math.floor(Math.random()*4);
+//   if(value == 0){
+//         getSong()
+//         ranSongElem.style.color = 'pink';
+//         ranSongElem.style.borderBottom = '0.5rem solid pink'
+//         ranSongElem.innerText = "Random 💔Depressed💔 Song"
+//         videoElem.setAttribute('src',`background/${depressedVid[randomNum]}.mp4`);
+//     }
+//     else if(value ==1){
+//         getSong()
+//         ranSongElem.style.color = 'rgb(255, 246, 66)';
+//         ranSongElem.style.borderBottom = '0.5rem solid yellow'
+//         ranSongElem.innerText = "Random 😭Sad😢 Song"
+//         videoElem.setAttribute('src',`background/${sadVid[randomNum]}.mp4`);
+//     }
+//     else if(value ==2){
+//         getSong()
+//         ranSongElem.style.color = 'rgb(100, 255, 44)';
+//         ranSongElem.style.borderBottom = '0.5rem solid green';
+//         ranSongElem.innerText = "Random 😢Neutral🙃 Song"
+//         videoElem.setAttribute('src',`background/${netVid[randomNum]}.mp4`);
+//     }
+//     else if(value ==3){
+//         getSong()
+//         ranSongElem.style.color = 'rgb(0, 149, 255)';
+//         ranSongElem.style.borderBottom = '0.5rem solid blue'
+//         ranSongElem.innerText = "Random 😊Uplifting😄 Song"
+//         videoElem.setAttribute('src',`background/${upVid[randomNum]}.mp4`);
+//     }
+//     else if(value ==4){
+//         getSong()
+//         ranSongElem.style.color = 'rgb(168, 47, 255)';
+//         ranSongElem.style.borderBottom = '0.5rem solid purple'
+//         ranSongElem.innerText = "Random 😜Happy😁 Song"
+//         videoElem.setAttribute('src',`background/${happyVid[randomNum]}.mp4`);
+//     }
+//     else if(value ==5){
+//         getSong()
+//         ranSongElem.style.color = 'rgb(255, 145, 0)';
+//         ranSongElem.style.borderBottom = '0.5rem solid orange'
+//         ranSongElem.innerText = "Random 😆Euphoric🥰 Song"
+//         videoElem.setAttribute('src',`background/${euVid[randomNum]}.mp4`);
+//     }
+//     else if(value ==6){
+//         getSong()
+//         ranSongElem.style.color = 'red';
+//         ranSongElem.style.borderBottom = '0.5rem solid red'
+//         ranSongElem.innerText = "Random 😤Rage😈 Song"
+//         videoElem.setAttribute('src',`background/${rageVid[randomNum]}.mp4`);
+//     }
+// }
 
+function display(){
+    if(value == 0){
+          getSong()
+          ranSongElem.style.color = 'pink';
+          ranSongElem.style.borderBottom = '0.5rem solid pink'
+          ranSongElem.innerText = "Random 💔Depressed💔 Song"
+          document.body.style.backgroundImage = "url('backgrounds/depressed.png')";
+          document.body.style.backgroundSize = 'fit';
+          document.body.style.backgroundRepeat = 'no-repeat';
+
+
+      }
+      else if(value ==1){
+          getSong()
+          ranSongElem.style.color = 'rgb(255, 246, 66)';
+          ranSongElem.style.borderBottom = '0.5rem solid yellow'
+          document.body.style.backgroundImage = "url('backgrounds/sad.png')";
+          document.body.style.backgroundSize = 'fit';
+         document.body.style.backgroundRepeat = 'no-repeat';
+
+      }
+      else if(value ==2){
+          getSong()
+          ranSongElem.style.color = 'rgb(100, 255, 44)';
+          ranSongElem.style.borderBottom = '0.5rem solid green';
+          ranSongElem.innerText = "Random 😢Neutral🙃 Song"
+          document.body.style.backgroundImage = "url('backgrounds/neutral.png')";
+          document.body.style.backgroundSize = 'fit';
+            document.body.style.backgroundRepeat = 'no-repeat';
+      }
+      else if(value ==3){
+          getSong()
+          ranSongElem.style.color = 'rgb(0, 149, 255)';
+          ranSongElem.style.borderBottom = '0.5rem solid blue'
+          ranSongElem.innerText = "Random 😊Uplifting😄 Song"
+          document.body.style.backgroundImage = "url('backgrounds/up.png')";
+          document.body.style.backgroundSize = 'fit';
+document.body.style.backgroundRepeat = 'no-repeat';
+
+      }
+      else if(value ==4){
+          getSong()
+          ranSongElem.style.color = 'rgb(168, 47, 255)';
+          ranSongElem.style.borderBottom = '0.5rem solid purple'
+          ranSongElem.innerText = "Random 😜Happy😁 Song"
+          document.body.style.backgroundImage = "url('backgrounds/happy.png')";
+          document.body.style.backgroundSize = 'cover';
+
+      }
+      else if(value ==5){
+          getSong()
+          ranSongElem.style.color = 'rgb(255, 145, 0)';
+          ranSongElem.style.borderBottom = '0.5rem solid orange'
+          ranSongElem.innerText = "Random 😆Euphoric🥰 Song"
+          document.body.style.backgroundImage = "url('backgrounds/euphoric.png')";
+          document.body.style.backgroundSize = 'fit';
+          document.body.style.backgroundRepeat = 'no-repeat';
+
+      }
+      else if(value ==6){   
+          getSong()
+          ranSongElem.style.color = 'red';
+          ranSongElem.style.borderBottom = '0.5rem solid red'
+          ranSongElem.innerText = "Random 😤Rage😈 Song"
+          document.body.style.backgroundImage = "url('backgrounds/rage.png')";
+          document.body.style.backgroundSize = 'cover';
+      }
+  }
     async function getSong() {
       try {
         //await and fetch the data from the database
@@ -111,6 +179,9 @@ reset.addEventListener("click",function(){
     output1.classList.toggle('active');
     videoElem.setAttribute('src',` `);
     cardElem.style.color = 'black';
+    document.body.style.backgroundImage = "";
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'repeat';
 });
 
 //function to change the slider's value
