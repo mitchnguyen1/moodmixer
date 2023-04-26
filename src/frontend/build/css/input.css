@@ -33,7 +33,7 @@ text-shadow:
 .card{
     border: 2px solid black;
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 6.5rem;
     font-family: 'serif';
     background-color: rgba(233, 232, 232, 0.918);
 }
